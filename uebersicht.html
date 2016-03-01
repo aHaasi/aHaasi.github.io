@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="background">
+    <div class="container">
+        <h1>Übersicht</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+            </div>
+            {% for product in site.products %}
+            {% capture modulo %}{{ forloop.index0 | modulo:3 }}{% endcapture %}
+            {% if modulo == '0' %}
+            <div class="row">
+            {% endif %}
+                <div {% if site.products.size == 1 %} class="col-md-12 uebersicht-element" {% else %} class="col-md-4 uebersicht-element" {% endif %}>
+                    <a href="{{ product.url | prepend: site.baseurl }}">
+                    <div class="item-uebersicht"><img  src="images/Uebersicht/{{product.image}}.JPG"/></div>
+                    <h3 class="orange-color">{{ product.title }}</h3>
+                    </a>
+                </div>
+            {% if modulo == '2' %}
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

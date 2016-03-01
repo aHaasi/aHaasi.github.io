@@ -1,0 +1,59 @@
+html,body{
+    background-color: #333;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 60px;
+    font-weight: normal;
+    text-align:center;
+    line-height:1.5;
+    color: orange;
+}
+.background{
+    background-color: #333;
+}
+.orange-color{
+    color: orange;
+}
+.background p{
+    color: orange;
+}
+.orange-background{
+    background-color: orange;
+}
+.orange-button{
+    border-color: #333;
+}
+.orange-button:hover{
+    background-color: orange;
+}
+.navbar{
+    background-color: orange;
+}
+#myNavbar a{
+    color: black;
+}
+#myNavbar a:hover{
+    color: white;
+}
+.main-logo{
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+.navbar-brand{
+    padding-top: 10px;
+}
+.item-uebersicht{
+    width: 350px;
+}
+.item-uebersicht img{
+    width: 100%;
+    height: auto;
+}
+.uebersicht-element a:hover{
+    color: white;
+    text-decoration: none
+}
+.header{
+    font-size: 40px;
+}

@@ -1,0 +1,7 @@
+# Site settings
+title: Getigerter Löwe
+
+# Build settings
+collections:
+  products:
+    output: true

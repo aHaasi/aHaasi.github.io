@@ -1,6 +1,46 @@
-<html>
-<header><title>This is title</title></header>
-<body>
-Hello world
-</body>
-</html>
+---
+layout: default
+---
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="background">
+  <div class="container">
+    <h1 class="main-logo">
+      <img  src="images/main-logo.png" alt="Getigerter Löwe" /><br />
+    </h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            {% for i in (1..19) %}
+            <div class="item {% if i == 1 %} active {% endif %}">
+              <img src="images/Slideshow/DSC_{{ i }}.jpg">
+            </div>
+            {% endfor %}
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+        <p>
+          <a class="btn btn-lg btn-primary orange-background orange-button" href="uebersicht.html" role="button">Weiter zur Übersicht &raquo;</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
