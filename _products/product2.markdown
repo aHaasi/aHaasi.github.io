@@ -1,6 +1,6 @@
 ---
 layout: product
-title:  "Hose"
+title:  "Pullover"
 shortDesc: "Opens a single project page"
 image: "DSC_0058"
 images:
