@@ -1,6 +1,6 @@
 ---
 layout: product
-title:  "Mütze 4"
+title:  "Mütze 4 Test"
 shortDesc: "Opens a single project page"
 image: "DSC_0272"
 images:
