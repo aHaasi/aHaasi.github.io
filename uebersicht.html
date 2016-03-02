@@ -17,7 +17,7 @@ layout: default
                 <div {% if site.products.size == 1 %} class="col-md-12 uebersicht-element" {% else %} class="col-md-4 uebersicht-element" {% endif %}>
                     <a href="{{ product.url | prepend: site.baseurl }}">
                     <div class="item-uebersicht"><img  src="images/Uebersicht/{{product.image}}.JPG"/></div>
-                    <h3 class="orange-color">{{ product.title }}</h3>
+                    <h3 class="orange-color product-title">{{ product.title }}</h3>
                     </a>
                 </div>
             {% if modulo == '2' %}
