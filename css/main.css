@@ -27,6 +27,12 @@ h1,h2,h3,h4,h5,h6{
 .orange-button:hover{
     background-color: orange;
 }
+.orange-button:active{
+    background-color: orange;
+}
+.orange-button:focus{
+    background-color: orange;
+}
 .navbar{
     background-color: orange;
 }

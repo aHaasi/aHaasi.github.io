@@ -4,8 +4,11 @@ title:  "Mütze 1"
 shortDesc: "Opens a single project page"
 image: "DSC_0036"
 images:
-   - image: "project1-1.png"
-   - image: "project1-2.png"
+   - "DSC_0037"
+   - "DSC_0038"
+   - "DSC_0042"
+   - "DSC_0044"
+   - "DSC_0045"
    
 skills:
    - title: "Perfect Designs"
