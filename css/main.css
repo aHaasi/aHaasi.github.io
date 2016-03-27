@@ -9,6 +9,12 @@ h1,h2,h3,h4,h5,h6{
     line-height:1.5;
     color: orange;
 }
+a{
+    color: #e6e6c1
+}
+a:hover{
+    color: #e6e6c1
+}
 .background{
     background-color: #333;
 }
@@ -40,7 +46,7 @@ h1,h2,h3,h4,h5,h6{
     color: black;
 }
 #myNavbar a:hover{
-    color: white;
+    color: #e6e6c1;
 }
 .main-logo{
     margin-bottom: 50px;
@@ -65,4 +71,19 @@ h1,h2,h3,h4,h5,h6{
 }
 .product-title{
     margin-top: 5px;
+}
+
+/** Contact **/
+.contact-logo{
+    width: 300px;
+    margin-Bottom: 20px;
+}
+.img-beside-text{
+    vertical-align:middle;
+}
+.margin-to-top{
+    margin-top: 10px;
+}
+.margin-to-top-high{
+    margin-top: 50px;
 }

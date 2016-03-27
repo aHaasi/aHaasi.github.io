@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="background">
+  <div class="container">
+    <h1>Kontakt</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <p>{{site.data.contact_text.beschreibungsText}}</p>
+      </div>
+    </div>
+    {% for info in site.data.contact_text.informationen %}
+    <div class="row">
+      <div class="col-md-12 margin-to-top">
+        <img class="img-beside-text" src="{{base}}/images/logo-klein.png">
+        <span class="orange-color">{{info}}</span>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="row margin-to-top-high">
+      <div class="col-md-5">
+        <form name="myform" id="contactForm" action="sendcontact.php" enctype="multipart/form-data" method="post">
+        <div class="form-group ">
+          <label for="name" class="orange-color margin-to-top">Name:</label>
+          <input type="text" class="form-control" id="name" name="name">
+
+          <label for="email" class="orange-color margin-to-top">E-Mailadresse:</label>
+          <input type="text" class="form-control" id="email" name="email">
+
+          <label for="message" class="orange-color margin-to-top">Ihre Nachricht:</label>
+          <textarea class="form-control" rows="5" id="message" name="message"></textarea>
+
+          <button class="btn margin-to-top btn-lg btn-primary orange-background orange-button" id="submit" name="submit" type="submit">Absenden</button>
+
+        </div>
+        </form>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <img  src="images/main-logo.png" alt="Getigerter Löwe" class="contact-logo"/><br />
+        <p><span class="tab">E-Mail: </span><a href="javascript:window.location.href='mailto:{{site.data.contact.company.e-mail}}';">{{site.data.contact.company.e-mail}}</a></p>
+        <p><a href="{{site.data.contact.shop}}" class="scroll">Weiter zum Shop</a></p>
+      </div>
+    </div>
+  </div>
+</div>

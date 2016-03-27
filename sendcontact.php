@@ -2,7 +2,7 @@
 
 // Define some constants
 define( "RECIPIENT_NAME", "Steffi Albrecht" ); // YOUR NAME
-define( "RECIPIENT_EMAIL", "getigerter-loewe@freenet.de" );
+define( "RECIPIENT_EMAIL", "annehaase@mailbox.org" );
 define( "EMAIL_SUBJECT", "[Webform]:" ); //YOUR SUBJECT
 
 // Read the form values
@@ -31,7 +31,7 @@ if ( $success )
 }
 else
 {
-	echo "<h1>There was a problem sending your message. Please try again.</h1>";
+	echo "<h1>Es ist ein Problem beim Senden der E-Mail aufgetreten. Bitte versuchen Sie es erneut.</h1>";
 }
 ?>
 
