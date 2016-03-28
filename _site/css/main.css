@@ -119,13 +119,22 @@ a:hover{
 }
 
 .hovereffect h2 {
-    text-transform: uppercase;
-    color: #e6e6c1;
+    color: orange;
     text-align: center;
     position: relative;
     font-size: 17px;
     padding: 10px;
     float: left;
+    margin: 0px;
+    display: inline-block;
+}
+.hovereffect p {
+    color: orange;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    padding: 10px;
+    float: right;
     margin: 0px;
     display: inline-block;
 }
@@ -157,6 +166,7 @@ a:hover{
 }
 
 .hovereffect h2,
+.hovereffect p,
 .hovereffect p.icon-links a {
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
@@ -175,12 +185,14 @@ a:hover{
 
 .hovereffect:hover .overlay,
 .hovereffect:hover h2,
+.hovereffect:hover p,
 .hovereffect:hover p.icon-links a {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
 
-.hovereffect:hover h2 {
+.hovereffect:hover h2,
+.hovereffect:hover p {
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
 }

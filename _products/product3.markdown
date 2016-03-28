@@ -1,21 +1,23 @@
 ---
 layout: product
-title:  "Mütze 2"
-shortDesc: "Opens a single project page"
-image: "DSC_0257"
-images:
-   - image: "project1-1.png"
-   - image: "project1-2.png"
-   
-skills:
-   - title: "Perfect Designs"
-     text: "Lorem Ipsum is simply dummy text of the printing and design."
-   - title: "Amazing Concepts"
-     text: "Lorem Ipsum is simply dummy text of the printing and design."
-   - title: "Perfect Designs"
-     text: "Lorem Ipsum is simply dummy text of the printing and design."
-   - title: "Amazing Concepts"
-     text: "Lorem Ipsum is simply dummy text of the printing and design."
+titel:  "Mütze"
+kurzbeschreibung: "Kurze Beschreibung der Mütze"
+startBild: "DSC_0257"
+bilder:
+   - "DSC_0037"
+   - "DSC_0038"
+   - "DSC_0042"
+   - "DSC_0044"
+   - "DSC_0045"
+groesse:
+   von: 50
+   bis: 96
+material:
+    Baumwolle: 90
+    Elasthan: 2
+geschlecht: w
+pflege: "Schonwäsche 30°C auf links. Nicht Trocknergeeignet"
+
 ---
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.

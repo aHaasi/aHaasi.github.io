@@ -18,9 +18,10 @@ layout: default
                 <div {% if site.products.size == 1 %} class="col-md-12 uebersicht-element" {% else %} class="col-md-4 uebersicht-element" {% endif %}>
                     <a href="{{ product.url | prepend: site.baseurl }}">
                         <div class="hovereffect">
-                            <img class="img-responsive" src="{{base}}/images/Uebersicht/{{product.image}}.JPG" alt="">
+                            <img class="img-responsive" src="{{base}}/images/Uebersicht/{{product.startBild}}.JPG" alt="">
                             <div class="overlay">
-                                <h2>{{ product.title }}</h2>
+                                <h2>{{ product.titel }}</h2>
+                                <p>{{ product.kurzbeschreibung}}</p>
                             </div>
                         </div>
                     </a>

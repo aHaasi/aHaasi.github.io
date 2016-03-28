@@ -4,13 +4,13 @@ layout: default
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="background">
     <div class="container">
-        <h1>{{ page.title }}</h1>
+        <h1>{{ page.titel }}</h1>
         <div class="row">
             <div class="col-md-6">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
-                        {% for image in page.images %}
+                        {% for image in page.bilder %}
                         <div class="item {% if forloop.index0 == 0 %} active {% endif %}">
                             <img src="{{base}}/images/Uebersicht/{{image}}.JPG">
                         </div>
@@ -29,8 +29,16 @@ layout: default
                 </div>
             </div>
             <div class="col-md-6">
-                <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-                <p>To see the difference between static and fixed top navbars, just scroll.</p>
+                <p>{{ page.kurzbeschreibung }}</p>
+                <p><b>Material</b>:</p>
+                {% for material in page.material %}
+                <p>
+                    <img class="img-beside-text" src="{{base}}/images/logo-klein.png">
+                    <span class="orange-color">{{material}}</span>
+                </p>
+                {% endfor %}
+                <p><i class="fa fa-arrows-v"></i> <b>Größe:</b> {{ page.groesse.von }} -  {{ page.groesse.bis }}</p>
+                <p><i class="fa fa-genderless"></i> <b>Geschlecht:</b> {% if page.geschlecht == 'w' %} <i class="fa fa-venus"></i> (weiblich) {% else %} <i class="fa fa-mars"></i> (männlich) {% endif %}</p>
             </div>
         </div>
         <div class="row">
