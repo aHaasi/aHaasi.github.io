@@ -13,8 +13,8 @@ groesse:
    von: 50
    bis: 96
 material:
-    Baumwolle: 90
-    Elasthan: 2
+    - "Baumwolle 90%"
+    - "Elasthan 2%"
 geschlecht: w
 pflege: "Schonwäsche 30°C auf links. Nicht Trocknergeeignet"
 

@@ -8,7 +8,7 @@ layout: default
         <div class="row">
             <div class="col-md-12">
                 <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-                <p>Alle Produkte gibt es auch im Shop: <a class="btn btn-lg btn-primary orange-background orange-button" href="http://stores.ebay.de/getigerter_loewe" role="button">Weiter zum Shop &raquo;</a></p>
+                <p>Alle Produkte gibt es auch im Shop: <a class="btn btn-lg btn-primary orange-background orange-button" href="{{site.data.contact.shop}}" role="button">Weiter zum Shop &raquo;</a></p>
             </div>
             {% for product in site.products %}
             {% capture modulo %}{{ forloop.index0 | modulo:3 }}{% endcapture %}
