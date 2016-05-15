@@ -13,13 +13,14 @@ layout: default
       <div class="col-md-4">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-
           <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            {% for i in (1..19) %}
-            <div class="item {% if i == 1 %} active {% endif %}">
-              <img src="images/Slideshow/DSC_{{ i }}.JPG">
-            </div>
+          <div class="carousel-inner" role="listbox" id="slideShow">
+            {% for image in site.static_files %}
+            {% if image.path contains 'images/Slideshow' %}
+              <div class="item">
+                <img src="{{image.path}}">
+              </div>
+            {% endif %}
             {% endfor %}
           </div>
 

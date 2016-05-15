@@ -5,19 +5,21 @@ layout: default
 <div class="background">
     <section>
         <h1>Gallerie</h1>
+
         <div class="container gal-container">
-        {% for i in (1..5) %}
-            <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+            {% for image in site.static_files %}
+            {% if image.path contains 'images/Gallerie' %}
+            <div class="col-md-4 col-sm-6 co-xs-12 gal-item" data-id="{{image.path}}">
                 <div class="box">
-                    <a href="#" data-toggle="modal" data-target="#{{i}}">
-                        <img src="{{base}}/images/GallerieSortier/DSC_{{ i }}.JPG">
+                    <a class="image-link" href="#" data-toggle="modal" data-target="#{{image.path}}">
+                        <img src="{{ image.path }}">
                     </a>
-                    <div class="modal fade" id="{{i}}" tabindex="-1" role="dialog">
+                    <div class="modal fade" id="{{image.path}}" tabindex="-1" role="dialog">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <button type="button" class="close modal-close-bnt" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                                 <div class="modal-body">
-                                    <img src="{{base}}/images/GallerieSortier/DSC_{{ i }}.JPG" class="gallery-image" data-id="{{i}}" data-old-id="{{i}}">
+                                    <img src="{{ image.path }}" class="gallery-image" data-id="{{image.path}}" data-old-id="{{image.path}}">
                                 </div>
                                 <!-- Controls -->
                                 <a class="left carousel-control gallerie-prev-bnt" id="gallerie-prev" role="button">
@@ -33,7 +35,8 @@ layout: default
                     </div>
                 </div>
             </div>
-        {% endfor %}
+            {% endif %}
+            {% endfor %}
         </div>
     </section>
 </div>

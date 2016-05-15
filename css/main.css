@@ -243,10 +243,10 @@ body{
     object-fit:cover;
     -o-object-fit:cover;
 }
-.gal-item a:focus{
+.image-link:focus{
     outline: none;
 }
-.gal-item a:after{
+.image-link:after{
     content:"\e003";
     font-family: 'Glyphicons Halflings';
     opacity: 0;
@@ -264,7 +264,7 @@ body{
     -moz-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
 }
-.gal-item a:hover:after{
+.image-link:hover:after{
     opacity: 1;
 }
 .modal-open .gal-container .modal{
