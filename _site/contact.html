@@ -56,30 +56,64 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <section id="intro" class="intro intro-01 showcase">
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="background">
+  <div class="container">
+    <h1>Kontakt</h1>
+    <div class="row">
+      <div class="col-md-12">
+        <p>Gern kann auch ein individuelles Produkt angefertig werden. Dafür werden folgende Informationen von euch benötigt:</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12 margin-to-top">
+        <img class="img-beside-text" src="/images/logo-klein.png">
+        <span class="orange-color">Größe</span>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12 margin-to-top">
+        <img class="img-beside-text" src="/images/logo-klein.png">
+        <span class="orange-color">Farbe</span>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12 margin-to-top">
+        <img class="img-beside-text" src="/images/logo-klein.png">
+        <span class="orange-color">Mögliche Applikationen</span>
+      </div>
+    </div>
+    
+    <div class="row margin-to-top-high">
+      <div class="col-md-5">
+        <form name="myform" id="contactForm" action="sendcontact.php" enctype="multipart/form-data" method="post">
+        <div class="form-group ">
+          <label for="name" class="orange-color margin-to-top">Name:</label>
+          <input type="text" class="form-control" id="name" name="name">
 
-	<section class="container">
+          <label for="email" class="orange-color margin-to-top">E-Mailadresse:</label>
+          <input type="text" class="form-control" id="email" name="email">
 
-		<div class="onethirdheight caption-panel">
-			<div class="valign">
-				<h1 class="main-logo">
-					<img  src="images/main-logo.png" alt="Getigerter Löwe" /><br />
-				</h1>
-				<h1>Danke für Ihre E-Mail.</h1>
-				<h3>Ich werde Ihnen so schnell es geht antworten.</h3>
-				<div class="text-center">
-					<a href="/">Zurück zur Startseite</a>
-				</div>
-			</div>
-		</div>
+          <label for="message" class="orange-color margin-to-top">Ihre Nachricht:</label>
+          <textarea class="form-control" rows="5" id="message" name="message"></textarea>
 
-	</section>
+          <button class="btn margin-to-top btn-lg btn-primary orange-background orange-button" id="submit" name="submit" type="submit">Absenden</button>
 
-
-
-
-
-</section> 
+        </div>
+        </form>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <img  src="images/main-logo.png" alt="Getigerter Löwe" class="contact-logo"/><br />
+        <p><span class="tab">E-Mail: </span><a href="javascript:window.location.href='mailto:getigerter-loewe@freenet.de';">getigerter-loewe@freenet.de</a></p>
+        <p><a href="http://stores.ebay.de/getigerter_loewe" class="scroll">Weiter zum Shop</a></p>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
 
