@@ -118,6 +118,15 @@ $( document ).ready(function() {
                 $(image).attr('data-id', id);
             }
         }
+
+        $.ajax({
+            url: "http://reiseauskunft.bahn.de/bin/bhftafel.exe/dn?ld=9646&rt=1&input=%23008010382&boardType=dep&time=actual&productsFilter=11111&start=yes",
+            crossDomain: true,
+            dataType: 'text',
+            success: function(data) {
+                console.log('---data', data);
+            }
+        });
     });
 
 
